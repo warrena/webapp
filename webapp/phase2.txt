@@ -1,0 +1,85 @@
+Josh Pitkofsky
+Allie Warren
+________________________________________________________________
+Tables:
+
+CREATE TABLE idtranslate (
+    country TEXT,
+    two_letter TEXT,
+    three_letter TEXT,
+    PRIMARY KEY(three_letter)
+);
+
+CREATE TABLE severity (
+    country TEXT,
+    three_letter TEXT,
+    year INT,
+    intind INT,
+    intviol INT,
+    intwar INT,
+    civviol INT,
+    civwar INT,
+    ethviol INT,
+    ethwar INT,
+    PRIMARY KEY(three_letter)
+);
+
+CREATE TABLE description (
+    begin INT,
+    end INT,
+    three_letter TEXT,
+    description INT,
+    PRIMARY KEY(three_letter)
+);
+
+
+________________________________________________________________
+API Queries:
+
+SYNOPSIS: Get a list of all of the political violence in all countries in the specified year.
+
+QUERY (GET): /politicalconflicts/<year>/
+
+RESPONSE: a list of dictionaries, each of which describes the total severity of conflict in a specific country with keys ‘country’, ’three_letter’, ‘year’, ‘sum’
+
+EXAMPLE: http://whatever.com/politicalconflicts/1990/
+
+[{‘country’:’Tunisia’, ‘three_letter’:’TUN’,‘year’:1990,‘sum’:0},
+
+ {‘country’:’Turkey', 'three_letter’:’TUR’,‘year’:1990,‘sum’:3},
+
+ {‘country’:’Uganda’, 'three_letter’:’UGA’,‘year’ 1990,‘sum’:2}, 
+
+ {‘country’:’United Arab Emirates’, 'three_letter’:’UAE’,‘year’:1990,‘sum’:0},
+
+…]
+
+————————————————————————————————————————————————————————————————
+SYNOPSIS: Get a description of the political violence occurring in a specific country in the specified year.
+
+QUERY (GET): /politicalconflicts/<country>/<year>
+
+RESPONSE: Two dictionaries, one containing information related to the keys ‘three_letter’, ‘country’, ‘description’, ‘year’, ‘intind’, ‘intviol’, ‘intwar’, ‘civviol, ‘civwar’, ‘ethviol’, and ‘ethwar’ and the other dictionary containing a list of descriptions of the conflict in the specified year with key ‘description’.
+
+EXAMPLE: http://whatever.com/politicalconflicts/china/1990
+
+[{‘three_letter’:’CHN’,‘country’:’China’,‘year’:1990,‘intind’:0,‘intviol’:0,‘intwar’:0,‘civviol’:0,‘civwar’:1,‘ethviol’:2,‘ethwar’:0 }, {‘description’:’repression of dissidents’}]
+
+————————————————————————————————————————————————————————————————
+SYNOPSIS: Get the year of the worst political violence that occurred in a specific country, and get a list of all of the political violence in all countries in that specified year.
+
+QUERY (GET): /politicalconflicts/<country>/
+
+RESPONSE: a list of dictionaries, each of which describes the total severity of conflict in a specific country with keys ‘country’, ’three_letter’, ‘year’, ‘sum’
+
+EXAMPLE: http://whatever.com/politicalconflicts/1950
+
+[{‘country’:’China’, ‘three_letter’:’CHN’,‘year’:1950,‘sum’:18},
+
+ {‘country’:’Turkey', 'three_letter’:’TUR’,‘year’:1950,‘sum’:0},
+
+ {‘country’:’Uruguay’, 'three_letter’:’URU’,‘year’ 1950,‘sum’:0}, 
+
+ {‘country’:’Venezuela’, 'three_letter’:’VEN’,‘year’:1950,‘sum’:0},
+
+…]
