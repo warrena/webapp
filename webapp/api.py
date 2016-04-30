@@ -52,7 +52,7 @@ def get_all_countries(year):
     alphabetical order'''
     query = '''SELECT country, three_letter, year, intind, intviol, intwar, civviol, civwar, ethviol, ethwar
     FROM severity
-    WHERE year={0} 
+    WHERE year={1} 
     ORDER by country'''.format(country)
     country_list = []
     for rows in _fetch_all_rows_for_query(query):
@@ -88,8 +88,8 @@ def get_country_details(country, year):
     '''
     query_severity = '''SELECT three_letter, country, year, intind, intviol, intwar, civviol, civwar, ethviol, ethwar
                FROM severity
-               WHERE year={1} 
-               AND UPPER(country) LIKE UPPER('%{0}%')'''
+               WHERE year={2} 
+               AND UPPER(country) LIKE UPPER('%{1}%')'''
     severity_list = {}
     for rows in _fetch_all_rows_for_query(query_severity):
         severity_sum = row[3] + row[4] + row[5] + row[6] + row[7] + row[8] + row[9]  
@@ -98,8 +98,8 @@ def get_country_details(country, year):
 
     query_details = '''SELECT description
                FROM detail
-               WHERE beginning <= {0} AND {0} <= ending 
-               AND UPPER(country) LIKE UPPER('%{0}%')'''
+               WHERE beginning <= {2} AND {2} <= ending 
+               AND UPPER(country) LIKE UPPER('%{1}%')'''
     country_details = {}
     for rows in _fetch_all_rows_for_query(query_details): 
         country_details = {'description':row[0]}
