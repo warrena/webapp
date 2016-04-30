@@ -1,13 +1,8 @@
 #!/usr/bin/env python3
 '''
     api.py
-    Jeff Ondich, 25 April 2016
-
-    Simple Flask app used in the sample web app for
-    CS 257, Spring 2016. This is the Flask app for the
-    "books and authors" API and website. The API offers
-    JSON access to the data, while the website (at
-    route '/') offers end-user browsing of the data.
+    Josh Pitkofsky Allie Warren, 30 April 2016
+The api for the political violence visualizer.
 '''
 import sys
 import flask
@@ -69,7 +64,7 @@ def get_most_severe(country):
      in a specific country with keys ‘country’, ’three_letter’, ‘year’, ‘sum’ '''
     query = '''SELECT year, intind, intviol, intwar, civviol, civwar, ethviol, ethwar
                FROM severity
-               WHERE UPPER(country) LIKE UPPER('%{0}%')
+               WHERE UPPER(country) LIKE UPPER('%{1}%')
                ORDER by year'''.format(year)
     highest_severity = 0
     highest_year = 0
