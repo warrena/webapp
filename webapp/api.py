@@ -45,34 +45,33 @@ def get_all_countries(year):
     ''' Returns a list of all the countries and relevant severity
     information for the year indicated. Countries are output in
     alphabetical order'''
-    query = '''SELECT country, three_letter, year, intind, intviol, intwar, civviol, civwar, ethviol, ethwar
-    FROM severity
-    WHERE year={1} 
-    ORDER by country'''.format(country)
+    query = '''SELECT country, three_letter, year, intind, intviol, intwar, civviol, civwar, ethviol, ethwar FROM severity WHERE year={0} ORDER by country'''.format(year)
     country_list = []
-    for rows in _fetch_all_rows_for_query(query):
+    for row in _fetch_all_rows_for_query(query):
         severity_sum = row[3] + row[4] + row[5] + row[6] + row[7] + row[8] + row[9]  
         country= {'country':row[0], 'three_letter':row[1], 'year':row[2], 'sum' : severity_sum}
         country_list.append(country)
 
     return json.dumps(country_list)
 
-@app.route('/politicalconflicts/<country>')
+@app.route('/politicalconflicts/detail/<country>')
 def get_most_severe(country):
     ''' Returns a list of dictionaries, 
     each of which describes the total severity of conflict
      in a specific country with keys ‘country’, ’three_letter’, ‘year’, ‘sum’ '''
     query = '''SELECT year, intind, intviol, intwar, civviol, civwar, ethviol, ethwar
                FROM severity
-               WHERE UPPER(country) LIKE UPPER('%{1}%')
-               ORDER by year'''.format(year)
+               WHERE UPPER(country) LIKE UPPER('%{0}%')
+               ORDER by year'''.format(country)
     highest_severity = 0
     highest_year = 0
-    for rows in _fetch_all_rows_for_query(query):
-        severity_sum = row[3] + row[4] + row[5] + row[6] + row[7] + row[8] + row[9]  
+    severity_sum = 0
+    for row in _fetch_all_rows_for_query(query):
+        severity_sum = row[1] + row[2] + row[3] + row[4] + row[5] + row[6] + row[7]  
         if (severity_sum >= highest_severity):
-            highest_year = row[2]
-        
+            highest_year = row[0]
+            highest_severity = severity_sum
+    print(--------------------------------------------highest_year)   
     return get_all_countries(highest_year)
 
     
@@ -83,22 +82,28 @@ def get_country_details(country, year):
     '''
     query_severity = '''SELECT three_letter, country, year, intind, intviol, intwar, civviol, civwar, ethviol, ethwar
                FROM severity
-               WHERE year={2} 
-               AND UPPER(country) LIKE UPPER('%{1}%')'''
+               WHERE year={1} 
+               AND UPPER(country) LIKE UPPER('%{0}%')'''.format(country, year)
     severity_list = {}
-    for rows in _fetch_all_rows_for_query(query_severity):
+    for row in _fetch_all_rows_for_query(query_severity):
         severity_sum = row[3] + row[4] + row[5] + row[6] + row[7] + row[8] + row[9]  
         severity_list= {'three_letter':row[0], 'country':row[1], 'year':row[2], 'intind':row[3], 'intviol':row[4],
         'intwar':row[5], 'civviol':row[6], 'civwar':row[7], 'ethviol':row[8], 'ethwar':row[9]}
 
     query_details = '''SELECT description
                FROM detail
-               WHERE beginning <= {2} AND {2} <= ending 
-               AND UPPER(country) LIKE UPPER('%{1}%')'''
-    country_details = {}
-    for rows in _fetch_all_rows_for_query(query_details): 
-        country_details = {'description':row[0]}
-    
+               WHERE {1} BETWEEN beginning AND ending 
+               AND UPPER(country) LIKE UPPER('%{0}%')'''.format(country, year)
+    descrip = ''
+    counter = 0
+    for row in _fetch_all_rows_for_query(query_details):
+        if counter != 0:
+            descrip = descrip + ', ' + row[0]
+        else:
+            descrip = row[0]
+        counter=counter+1
+
+    country_details= {'description': descrip}
     description = [severity_list, country_details]
     return json.dumps(description)
 
@@ -109,6 +114,6 @@ if __name__ == '__main__':
 
     host = sys.argv[1]
     port = sys.argv[2]
-    app.run(host=host, port=port)
+    app.run(host='thacker.mathcs.carleton.edu', port=5147, debug=True)
 
 
