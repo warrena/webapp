@@ -107,6 +107,20 @@ def get_country_details(country, year):
     description = [severity_list, country_details]
     return json.dumps(description)
 
+@app.route('/politicalconflicts/twoletter/<year>')
+def get_all_countries_two_letter(year):
+    '''returns severity sum and two letter code'''
+    query = '''SELECT country, three_letter, year, intind, intviol, intwar,  civviol, civwar, ethviol, ethwar FROM severity WHERE year={0} ORDER by country'''.format(year)
+    country_list={}
+    for row in _fetch_all_rows_for_query(query):
+        severity_sum = row[3] + row[4] + row[5] + row[6] + row[7] + row[8] + row[9]
+        country_code = row[1]
+        query_two_letter = '''SELECT two_letter FROM idtranslate WHERE UPPER(three_letter) LIKE UPPER('%{0}%')'''.format(country_code)
+        for item in _fetch_all_rows_for_query(query_two_letter):
+            two_letter_code = item[0]
+            country_list[two_letter_code] = severity_sum
+    return json.dumps(country_list)
+
 if __name__ == '__main__':
     if len(sys.argv) != 3:
         print('Usage: {0} host port'.format(sys.argv[0]), file=sys.stderr)
