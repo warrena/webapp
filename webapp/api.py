@@ -38,7 +38,7 @@ def _fetch_all_rows_for_query(query):
 @app.route('/') 
 def get_main_page():
     ''' This is the only route intended for human users '''
-    return flask.render_template('index.html')
+    return flask.render_template('maps.html')
 
 @app.route('/politicalconflicts/<year>')
 def get_all_countries(year):

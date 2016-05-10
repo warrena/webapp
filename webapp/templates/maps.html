@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jVectorMap demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="/static/jquery-jvectormap-2.0.3.css" type="text/css" media="screen"/>
+    <script type="text/javascript" src="{{ url_for('static', filename='jquery-jvectormap-2.0.3.min.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='jquery-jvectormap-world-mill.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='Allie_Josh_functions.js') }}"></script>
+    
+
+</head>
+<body>
+<h2>Levels of Political Violence Worldwide</h2>
+    <p>Enter a year between 1946 and 2012</p>
+    <p><input id="year_entered" type="text" />
+    <button onclick="onChangeYear();makeMap()">Update Year</button>
+    </p>
+<script>gdpData = getData;
+</script>
+<div id ="getData"></div>
+<figure>
+    <div id="world-map-gdp" style="width: 600px; height: 400px"></div>
+    <script>
+      $(function(){
+       $('#world-map-gdp').vectorMap({
+          map: 'world_mill',
+          series: {
+            regions: [{
+              values: getData,
+             scale: ['#C8EEFF', '#0071A4'],
+              normalizeFunction: 'polynomial'
+            }]
+          },
+          onRegionTipShow: function(e, el, code){
+            el.html(el.html()+' (GDP - '+ getData[code]+')');
+          }
+        });
+      });
+    </script>
+
+ <script> var updateMap = (function(){
+var mapElement = document.getElementById('world-map-gdp');
+mapElement.innerHTML = makeMap();
+});
+    </script>
+
+    <script>var makeMap = (function(){
+var mapElement = document.getElementById('world-map-gdp');
+$('#world-map-gdp').vectorMap({
+          map: 'world_mill',
+          series: {
+            regions: [{
+              values: getData,
+              scale: ['#C8EEFF', '#0071A4'],
+              normalizeFunction: 'linear'
+            }]
+          },
+          onRegionTipShow: function(e, el, code){
+            el.html(el.html()+' (GDP - '+ getData[code]+')');
+          }
+        });
+      }); </script> 
+  </figure>
+       <div id="response"></div>
+</body>
+</html>
