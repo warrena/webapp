@@ -22,13 +22,13 @@
 <figure>
     <div id="world-map-gdp" style="width: 600px; height: 400px"></div>
     <script>
-      $(function(){
-       $('#world-map-gdp').vectorMap({
+        $(function(){
+         $('#world-map-gdp').vectorMap({
           map: 'world_mill',
           series: {
             regions: [{
               values: getData,
-             scale: ['#C8EEFF', '#0071A4'],
+             scale: ['#FFD800', '#B60600'],
               normalizeFunction: 'polynomial'
             }]
           },
@@ -39,11 +39,6 @@
       });
     </script>
 
- <script> var updateMap = (function(){
-var mapElement = document.getElementById('world-map-gdp');
-mapElement.innerHTML = makeMap();
-});
-    </script>
 
     <script>var makeMap = (function(){
 var mapElement = document.getElementById('world-map-gdp');
@@ -52,7 +47,7 @@ $('#world-map-gdp').vectorMap({
           series: {
             regions: [{
               values: getData,
-              scale: ['#C8EEFF', '#0071A4'],
+              scale: ['#FFD800', '#B60600'],
               normalizeFunction: 'linear'
             }]
           },
