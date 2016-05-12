@@ -10,17 +10,19 @@
     
 
 </head>
-<body>
+<body onkeypress="onKeyPress(event)">
 <h2>Levels of Political Violence Worldwide</h2>
     <p>Enter a year between 1946 and 2012</p>
     <p><input id="year_entered" type="text" />
-    <button onclick="onChangeYear();makeMap()">Update Year</button>
+    <button onclick="onChangeYear()">Update Year</button>
     </p>
 <script>gdpData = getData;
 </script>
 <div id ="getData"></div>
+<div id = "refreshMap" style = "background:#202020">
 <figure>
     <div id="world-map-gdp" style="width: 600px; height: 400px"></div>
+</div>
     <script>
         $(function(){
          $('#world-map-gdp').vectorMap({
@@ -33,7 +35,7 @@
             }]
           },
           onRegionTipShow: function(e, el, code){
-            el.html(el.html()+' (Political Violence Severity - '+ getData[code]+')');
+            el.html(el.html()+' (Political Violence Severity - '+ getDetail[code]+')');
           }
         });
       });
@@ -52,11 +54,11 @@ $('#world-map-gdp').vectorMap({
             }]
           },
           onRegionTipShow: function(e, el, code){
-            el.html(el.html()+' (Political Violence Severity - '+ getData[code]+')');
+            el.html(el.html()+' (Political Violence Severity - '+ getDetail[code]+')');
           }
         });
       }); </script> 
   </figure>
-       <div id="response"></div>
+       <div id="details"></div>
 </body>
 </html>

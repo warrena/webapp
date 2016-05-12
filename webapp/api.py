@@ -49,8 +49,28 @@ def get_all_countries(year):
     country_list = []
     for row in _fetch_all_rows_for_query(query):
         severity_sum = row[3] + row[4] + row[5] + row[6] + row[7] + row[8] + row[9]  
-        country= {'country':row[0], 'three_letter':row[1], 'year':row[2], 'sum' : severity_sum}
-        country_list.append(country)
+        country_info = {'country':row[0], 'three_letter':row[1], 'year':row[2], 'sum' : severity_sum}
+        
+        query_details = '''SELECT description
+               FROM detail
+               WHERE {1} BETWEEN beginning AND ending 
+               AND UPPER(three_letter) LIKE UPPER('%{0}%')'''.format(row[1], year)
+        descrip = ''
+        counter = 0
+        for line in _fetch_all_rows_for_query(query_details):
+            if counter != 0:
+                descrip = descrip + ', ' + line[0]
+            else:
+                descrip = line[0]
+            counter=counter+1
+        country_info['description'] =  descrip
+       
+        query_two_letter = '''SELECT two_letter FROM idtranslate WHERE UPPER(three_letter) LIKE UPPER('%{0}%')'''.format(row[1])
+        for item in _fetch_all_rows_for_query(query_two_letter):
+            two_letter_code = item[0]
+        country_info[two_letter_code] = descrip + str(severity_sum) 
+
+        country_list.append(country_info)
 
     return json.dumps(country_list)
 
