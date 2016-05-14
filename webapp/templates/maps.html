@@ -4,24 +4,75 @@
   <title>jVectorMap demo</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <link rel="stylesheet" href="/static/jquery-jvectormap-2.0.3.css" type="text/css" media="screen"/>
-    <script type="text/javascript" src="{{ url_for('static', filename='jquery-jvectormap-2.0.3.min.js') }}"></script>
+  <link rel="stylesheet" href="/static/maps.css" type="text/css" media="screen"/>
+  <script type="text/javascript" src="{{ url_for('static', filename='jquery-jvectormap-2.0.3.min.js') }}"></script>
   <script type="text/javascript" src="{{ url_for('static', filename='jquery-jvectormap-world-mill.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='Allie_Josh_functions.js') }}"></script>
-    
+    <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'>
 
 </head>
 <body onkeypress="onKeyPress(event)">
-<h2>Levels of Political Violence Worldwide</h2>
+<section>
+   <input id='button_1' name='page' type='radio'>
+   <input id='button_2' name='page' type='radio'>
+   <input id='button_3' name='page' type='radio'>
+   <input id='button_4' name='page' type='radio'>
+   <div class='pages'>
+      <div class='page' id='page_1'>
+         <header>
+            <h1>Instructions</h1>
+         </header>
+         <p>
+            To use this map you can either enter a year or a country name.
+            <br>
+            If you enter a year then it displays the political violence level for the world in that year.
+            <br>
+           If you enter a country name (ex. China), it will shift the map into the year in which that country had its worst violence.
+           <br>
+           At any point you can click a country to view additional details.
+         </p>
+        
+          </div>
+      <div class='page' id='page_2'>
+         <header>
+            <h1>About</h1>
+         </header>
+         <p>
+            This project was built by Josh Pitkofsky and Allie Warren.
+            <br>
+            We found the data for the visualization from the Integrated Network for Societal Conflict Research and the Center for Systemic Peace. 
+            <br> The code to create the map came from JVectorMap <br> Much of the UI code was adapted from a pen on CodePen by @jappe </p>
+      </div>
+       </div>
+   <!-- labels -->
+   <div id='labels'>
+      <aside>
+         <label class='fa fa-info fa-3x' for='button_1'></label>
+         <label class='fa fa-user fa-3x' for='button_2'></label>
+      </aside>
+      <div id='special_labels'>
+         <label class='fa fa-close fa-2x' for='button_4'></label>
+         <label class='fa fa-close fa-2x' for='button_4'></label>
+         <label class='fa fa-close fa-2x' for='button_4'></label>
+      </div>
+   </div>
+</section>
+<main>
+
+<h2>Political Violence Worldwide</h2>
     <p>Enter a year between 1946 and 2012</p>
     <p><input id="year_entered" type="text" />
-    <button onclick="onChangeYear()">Update Year</button>
+    <button class="button" onclick="onChangeYear()">Update Year</button>
     </p>
-<script>gdpData = getData;
-</script>
+
+<p>Enter a country to search for its most violent year</p>
+    <p><input id="country_entered" type="text" />
+    <button class="button" onclick="onChangeCountry()">Search Country</button>
+    </p>
 <div id ="getData"></div>
 <div id = "refreshMap" style = "background:#202020">
 <figure>
-    <div id="world-map-gdp" style="width: 600px; height: 400px"></div>
+    <div id="world-map-gdp" style="width: 600px; height: 400px; float:left"></div>
 </div>
     <script>
         $(function(){
@@ -35,8 +86,13 @@
             }]
           },
           onRegionTipShow: function(e, el, code){
-            el.html(el.html()+' (Political Violence Severity - '+ getDetail[code]+')');
-          }
+            el.html(el.html()+' (Political Violence Severity - '+ getData[code]+')');
+                    },
+
+          onRegionClick: function (event, code) {
+             getDetailForRollover(code);
+                
+                        }
         });
       });
     </script>
@@ -54,11 +110,25 @@ $('#world-map-gdp').vectorMap({
             }]
           },
           onRegionTipShow: function(e, el, code){
-            el.html(el.html()+' (Political Violence Severity - '+ getDetail[code]+')');
-          }
+            el.html(el.html()+' (Political Violence Severity - '+ getData[code]+')');
+           },
+
+          onRegionClick: function (event, code) {
+             getDetailForRollover(code);
+
+                    }
         });
       }); </script> 
   </figure>
-       <div id="details"></div>
-</body>
+  <h2 id = "cntry"></h2>
+  <div id="country"></div>     
+  <h2 id = "Yr"></h2>
+  <div id="year"></div>
+  <h2 id = "Severity"></h2>
+  <div id="sum"></div>
+ <h2 id = "dts"></h2>
+  <div id="details"></div>
+
+</main>
+   </body>
 </html>

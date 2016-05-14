@@ -1,0 +1,392 @@
+beginning,ending,three_letter,country,description
+1945,1946,INS,Indonesia,Independence
+1945,1947,IRN,Iran,Azerbaijani and Kurd rebellions
+1945,1949,GRC,Greece,Greek civil war
+1945,1954,VIE,Vietnam,Indochina independence
+1946,1954,FRN,France,Indochina independence
+1946,1946,BOL,Bolivia,President Villarroel ousted by general armed uprising
+1946,1947,ALG,Algeria,Setif/AML Rebellion
+1946,1948,IND,India,"""Partition""--Muslims vs Hindus/Sikhs"
+1946,1948,PAK,Pakistan,"""Partition""--Muslims vs Hindus/Sikhs"
+1946,1950,CHN,China,Chinese civil war
+1947,1947,CHN,China,Taiwan invasion
+1947,1947,CHN,China,Repression of Taiwan dissidents
+1947,1947,PAR,Paraguay,"Paraguay Civil War ""Febrerista Insurrection"""
+1947,1948,YEM,Yemen AR,Civil violence (Yahya clan coup attempt)
+1947,1948,MAG,Madagascar,Colonial repression
+1947,1949,IND,India,Kashmir rebellion
+1948,1948,ISR,Israel,Independence
+1948,1948,COL,Colombia,Civil violence (Conservatives)
+1948,1948,COS,Costa Rica,Civil violence (National Union)
+1948,1948,ROK,South Korea,Civil violence (Army)
+1948,1948,IND,India,Civil violence (Hyderabad)
+1948,1949,EGY,Egypt,Palestine-Israel war
+1948,1949,ISR,Israel,Palestine-Israel war
+1948,1949,JOR,Jordan,Palestine-Israel war
+1948,1949,LEB,Lebanon,Palestine-Israel war
+1948,1949,SYR,Syria,Palestine-Israel war
+1948,1956,MAL,Malaysia,Repression of Chinese by Malay militia
+1948,2014,MYA,Myanmar (Burma),"Ethnic war (Karen, Shan, and others)"
+1948,1960,COL,Colombia,"""La Violencia"" civil war (Liberals)"
+1950,1950,CHN,China,International violence (Formosa Straits)
+1950,1950,TAW,Taiwan,International violence (Formosa Straits)
+1950,1950,INS,Indonesia,Ethnic violence (Moluccans)
+1950,1951,CHN,China,Tibet invasion
+1950,1951,CHN,China,Repression of the landlords
+1950,1952,PHI,Philippines,Civil violence (Huks)
+1950,1953,MYA,Myanmar (Burma),Chinese Kuomintang forces led by Gen. Li Mi
+1950,1953,PRK,North Korea,Korean War (civil war)
+1950,1953,ROK,South Korea,Korean War (civil war)
+1950,1953,USA,USA,Korean civil war
+1950,1953,CHN,China,Korean civil war
+1950,1960,MAL,Malaysia,Independence and civil violence
+1951,1951,THI,Thailand,Mahattan Naval Revolt
+1952,1952,EGY,Egypt,Civil violence (Nasser coup)
+1952,1952,BOL,Bolivia,"""National Revolution"""
+1952,1954,TUN,Tunisia,Independence
+1952,1963,KEN,Kenya,Independence (Mau Mau rebellion)
+1952,2014,IND,India,Ethnic war (northeast tribals; Assam separatists)
+1953,1953,INS,Indonesia,Civil violence (Darul Islam)
+1953,1953,IRN,Iran,Ouster of Mossadeq government by Shah loyalists
+1953,1954,VIE,Vietnam,Repression of landlords
+1953,1956,MOR,Morocco,Independence
+1954,1954,GUA,Guatemala,Civil violence (coup against Arbenz)
+1954,1955,CHN,China,First Taiwan Strait Crisis
+1954,1955,TAW,Taiwan,First Taiwan Strait Crisis
+1954,1955,TAW,Taiwan,Ethnic violence (Native Taiwanese v KMT)
+1954,1962,ALG,Algeria,Independence
+1954,1962,FRN,France,Algerian independence war
+1955,1955,COS,Costa Rica,Civil violence
+1955,1955,TAW,Taiwan,Civil violence (Taiwanese v KMT)
+1955,1955,ARG,Argentina,Civil violence (army rebellion)
+1955,1960,CAO,Cameroon,Independence
+1956,1956,EGY,Egypt,Suez War
+1956,1956,HUN,Hungary,International war
+1956,1956,RUS,USSR,International war
+1956,1960,YEM,Yemen AR,Ethnic violence (Yemeni-Adenese clans)
+1956,1967,CHN,China,Ethnic war (Tibetans)
+1956,1972,SDN,Sudan,Ethnic warfare (Islamic v African)
+1957,1957,HON,Honduras,International violence (border dispute)
+1957,1957,NIC,Nicaragua,International violence (border dispute)
+1957,1958,MAA,Mauritania,International violence (border dispute)
+1957,1958,MOR,Morocco,International violence (border dispute)
+1957,1959,CUB,Cuba,Civil war (Castro ousts Batista)
+1957,1961,INS,Indonesia,Civil violence (dissident military)
+1958,1958,LEB,Lebanon,Civil violence
+1958,1958,IRQ,Iraq,Civil violence (coup ousts monarchy)
+1958,1958,VEN,Venezuela,Civil violence (popular revolt against President Perez Jimenez)
+1958,1975,DRV,North Vietnam,"""Vietnam War"" (civil war)"
+1958,1975,RVN,South Vietnam,"""Vietnam War"" (civil war)"
+1959,1959,IRQ,Iraq,Civil violence (Shammar tribe)
+1959,1959,CHN,China,Repression of counter-revolutionaries
+1959,1966,RWA,Rwanda,PARMEHUTU overthrow of Tutsi monarchy; repression of Tutsis
+1960,1961,PAK,Pakistan,Ethnic violence (Pushtun)
+1960,1965,ZAI,Zaire,Katanga civil war
+1960,1973,LAO,Laos,Civil war
+1961,1961,CUB,Cuba,"US-instigated ""Bay of Pigs"" invasion"
+1961,1961,TUN,Tunisia,Colonial violence
+1961,1975,ANG,Angola,Independence
+1961,1975,POR,Portugal,Angolan independence
+1961,1993,IRQ,Iraq,Ethnic warfare (Kurds)
+1962,1962,CHN,China,International violence (border dispute)
+1962,1962,IND,India,International violence (border dispute)
+1962,1963,ALG,Algeria,Civil violence (rebel factions)
+1962,1964,BUI,Burundi,International violence
+1962,1964,RWA,Rwanda,International violence
+1962,1966,INS,Indonesia,International violence (north Borneo)
+1962,1966,MAL,Malaysia,International violence (north Borneo)
+1962,1970,YEM,Yemen AR,Civil war (following coup)
+1962,1973,ETH,Ethiopia,Eritrean separatists
+1962,1974,GNB,Guinea-Bissau,Independence
+1963,1963,IRQ,Iraq,Military coup ousts Kassem and aftermath
+1963,1963,IRN,Iran,Civil violence (land reform)
+1963,1964,SOM,Somalia,International violence
+1963,1964,EGY,Egypt,International violence
+1963,1964,ALG,Algeria,International violence (border dispute)
+1963,1964,MOR,Morocco,International violence (border dispute)
+1963,1968,CYP,Cyprus,Civil violence (Makarios crisis)
+1963,1993,INS,Indonesia,Ethnic warfare (Papuan-West Irian)
+1964,1964,ZAM,Zambia,Civil violence
+1964,1964,TAZ,Tanzania,Zanzibar Revolution
+1964,1964,ETH,Ethiopia,Ogaden clashes
+1964,1964,SOM,Somalia,Ogaden clashes
+1964,1966,KEN,Kenya,Shifta; Somali separatism
+1964,1973,USA,USA,Vietnamese civil war
+1965,1965,BUI,Burundi,Ethnic violence (failed coup; Hutu/Tutsi)
+1965,1965,DOM,Dominican Republic,Civil violence
+1965,1965,IND,India,2nd Kashmir War
+1965,1965,PAK,Pakistan,3rd Kashmir War
+1965,1966,INS,Indonesia,Repression of Chinese/Communists
+1965,1968,USA,USA,Civil violence (urban Afro-American unrest)
+1965,1975,MZM,Mozambique,Independence (FRELIMO)
+1965,1975,POR,Portugal,Mozambique independence
+1965,1983,THI,Thailand,Communist insurgency
+1965,1990,NAM,Namibia,Independence
+1965,1994,CHA,Chad,Civil war
+1965,2014,ISR,Israel,Ethnic war (Arab Palestinians/PLO-Hamas)
+1966,1966,NIG,Nigeria,Repression of Ibo
+1966,1966,UGA,Uganda,Ethnic violence (Buganda)
+1966,1970,NIG,Nigeria,Ethnic warfare (Biafra separatism)
+1966,1975,CHN,China,"""Cultural Revolution"""
+1966,1996,GUA,Guatemala,Repression of indigenous peoples
+1967,1967,ZAI,Zaire,Civil violence
+1967,1970,EGY,Egypt,"""Six-Day War"" and war of attrition"
+1967,1970,ISR,Israel,"""Six-Day War"" and war of attrition"
+1967,1970,JOR,Jordan,"""Six-Day War"" and war of attrition"
+1967,1970,SYR,Syria,"""Six-Day War"" and war of attrition"
+1968,1968,FRN,France,Civil violence (student and labor unrest)
+1968,1968,CZR,Czechoslovakia,"""Prague Spring"" civil violence"
+1968,1982,IND,India,Repression of Naxalites
+1969,1969,RUS,USSR,Ussuri River border dispute
+1969,1969,CHN,China,Ussuri River border dispute
+1969,1969,SAL,El Salvador,"""Soccer War"""
+1969,1969,HON,Honduras,"""Soccer War"""
+1969,1979,EQG,Equatorial Guinea,Repression of dissidents
+1969,1994,UKG,UK,Ethnic violence (Northern Ireland/IRA)
+1970,1970,JOR,Jordan,Civil violence (Palestinians)
+1970,1975,OMA,Oman,Civil violence (Dhofar rebellion)
+1970,1975,CAM,Cambodia,Civil war
+1970,1982,ITA,Italy,Ethnic violence (Sardinians)
+1971,1971,SRI,Sri Lanka,Civil violence (attempted coup)
+1971,1971,BNG,Bangladesh,Ethnic war (Bengali independence)
+1971,1971,PAK,Pakistan,Ethnic war (Bengali independence)
+1971,1971,IND,India,International war
+1971,1971,PAK,Pakistan,International war
+1971,1978,UGA,Uganda,Ethnic warfare (Idi Amin regime)
+1972,1972,BUI,Burundi,Ethnic violence (Hutus target Tutsis)
+1972,1973,BUI,Burundi,Repression of Hutus
+1972,1979,ZIM,Zimbabwe,Ethnic violence (ZANU/ZAPU v Whites)
+1972,1997,PHI,Philippines,Civil warfare (New Peoples Army)
+1972,2014,PHI,Philippines,Ethnic warfare (Moros)
+1973,1973,EGY,Egypt,"""Yom Kippur War"""
+1973,1973,ISR,Israel,"""Yom Kippur War"""
+1973,1973,SYR,Syria,"""Yom Kippur War"""
+1973,1973,CHL,Chile,Civil violence (army ouster of Allende)
+1973,1977,PAK,Pakistan,Ethnic warfare (Baluch separatism)
+1974,1974,CYP,Cyprus,Civil violence
+1974,1975,IRN,Iran,International violence (Shatt el Arab)
+1974,1975,IRQ,Iraq,International violence (Shatt el Arab)
+1974,1976,CHL,Chile,"Repression of dissidents (""disappeared"")"
+1974,1985,TUR,Turkey,Civil violence
+1974,1991,ETH,Ethiopia,Ethnic warfare (Eritreans and others)
+1975,1978,CAM,Cambodia,Khmer Rouge repression of dissidents
+1975,1979,MZM,Mozambique,Rhodesian armed incursions
+1975,1979,ZIM,Zimbabwe,Rhodesian armed incursions
+1975,1978,CAM,Cambodia,International war
+1975,1978,VIE,Vietnam,International war
+1975,1989,MAA,Mauritania,Colonial war (Western Sahara)
+1975,1989,MOR,Morocco,Colonial war (Western Sahara)
+1975,1990,LAO,Laos,Civil violence (rebel Lao and Hmong)
+1975,1991,INS,Indonesia,Ethnic violence (Aceh)
+1975,1991,LEB,Lebanon,Ethnic war (Various sects)
+1975,1992,BNG,Bangladesh,Ethnic war (Chittagong Hills)
+1975,2002,ANG,Angola,Civil war (UNITA)
+1975,2005,ANG,Angola,Civil violence (Cabinda separatists; FLEC)
+1975,2014,COL,Colombia,"Civil violence, land reform, and drug trafficking (left: ELN, FARC, ELP, MAO, M-19; right: MAS, AUC)"
+1976,1976,SAF,South Africa,Ethnic violence
+1976,1976,SDN,Sudan,Islamic Charter Front
+1976,1980,ARG,Argentina,"""The Dirty War"" repression of dissidents"
+1976,1992,INZ,Indonesia,Colonial war (East Timor)
+1977,1977,ANG,Angola,International violence (dispute over Shaba)
+1977,1977,ZAI,Zaire,International violence (dispute over Shaba)
+1977,1979,ETH,Ethiopia,"""Ogaden War"" ethnic violence (Somalis)"
+1977,1980,TUR,Turkey,Ethnic violence (Armenians)
+1977,1983,ZAI,Zaire,Repression of dissidents
+1977,1987,CAM,Cambodia,International violence
+1977,1987,THI,Thailand,International violence
+1978,1978,ISR,Israel,International violence (PLO factions)
+1978,1978,LEB,Lebanon,International violence (PLO factions)
+1978,1978,ANG,Angola,International violence (dispute over Shaba)
+1978,1978,ZAI,Zaire,International violence (dispute over Shaba)
+1978,1978,SOM,Somalia,Military faction
+1978,1978,YEM,Yemen PDR,Ouster of President Ali; factional fighting
+1978,1979,YEM,Yemen AR,International violence
+1978,1979,YEM,Yemen PDR,International violence
+1978,1979,NIC,Nicaragua,Civil war (Sandinistas)
+1978,1979,TAZ,Tanzania,International war (ouster of Idi Amin)
+1978,1979,UGA,Uganda,International war (ouster of Idi Amin)
+1978,1989,CAM,Cambodia,International war (ouster of Khmer Rouge)
+1978,1989,VIE,Vietnam,International war (ouster of Khmer Rouge)
+1978,1993,IRN,Iran,Civil war (Islamic state)
+1978,2002,AFG,Afghanistan,Civil war
+1979,1979,CHN,China,International war
+1979,1979,VIE,Vietnam,International war
+1979,1980,ROK,South Korea,"Unrest, riots, and government repression"
+1979,1982,SYR,Syria,Repression of dissidents (Muslim Brotherhood)
+1979,1985,IRN,Iran,Ethnic war (Kurds)
+1979,1992,SAL,El Salvador,Civil war (FMLN)
+1979,1998,IRQ,Iraq,Ethnic violence (Shias)
+1980,1980,BRA,Brazil,Repression of dissidents (death squads)
+1980,1980,JAM,Jamaica,Civil violence (elections)
+1980,1985,NIG,Nigeria,Ethnic violence (Islamic groups)
+1980,1988,IRN,Iran,International war
+1980,1988,IRQ,Iraq,International war
+1980,1988,RUS,USSR,Direct Intervention in Afghanistan civil war
+1980,1998,CHN,China,"Ethnic violence (Uighurs, Kazakhs)"
+1981,1981,GHA,Ghana,Civil violence (Konkomba v Nanumba)
+1981,1981,GAM,Gambia,SRLP rebellion
+1981,1986,UGA,Uganda,Repression of dissidents
+1981,1986,HON,Honduras,International violence; Contra armed forces
+1981,1986,NIC,Nicaragua,International violence; Contra armed forces
+1981,1987,ZIM,Zimbabwe,Ethnic violence (Ndebele)
+1981,1990,NIC,Nicaragua,Civil war (Contras)
+1981,1992,MZM,Mozambique,Civil war (RENAMO)
+1982,1982,ISR,Israel,International violence
+1982,1982,SYR,Syria,International violence
+1982,1982,ARG,Argentina,Falklands-Malvinas War
+1982,1982,UKG,UK,Falklands-Malvinas War
+1982,1990,ISR,Israel,International war
+1982,1990,LEB,Lebanon,International war
+1982,1997,PER,Peru,Civil violence (Sendero Luminoso)
+1983,1983,IND,India,Civil violence (elections in Assam)
+1983,1984,CHN,China,Repression of dissidents
+1983,1993,IND,India,Ethnic warfare (Sikhs)
+1983,1996,SAF,South Africa,Ethnic/civil warfare
+1983,1998,PAK,Pakistan,Ethnic violence (Sindhis; Muhajirs)
+1983,2009,SRI,Sri Lanka,Ethnic war (Tamils)
+1983,2002,SUD,Sudan,Ethnic war (Islamic v African)
+1984,1984,CAO,Cameroon,Military faction
+1984,1984,ZAI,Zaire,Ethnic/civil warfare
+1984,1999,TUR,Turkey,Ethnic warfare (Kurds)
+1985,1985,LBR,Liberia,Repression of dissidents (failed coup)
+1985,1987,CHN,China,International war
+1985,1987,VIE,Vietnam,International war
+1986,1987,YEM,Yemen PDR,Civil war
+1986,1989,SUR,Suriname,Rebellion by Surinamese Liberation Army (black-Maroons)
+1986,1993,NIG,Nigeria,Ethnic violence (Muslim-Christian)
+1986,2006,UGA,Uganda,Ethnic violence (Lord's Resistance Army: Langi and Acholi)
+1987,1987,CHN,China,International violence
+1987,1987,VIE,Vietnam,International violence
+1987,1987,CHL,Chile,Civil violence
+1987,1990,SRI,Sri Lanka,Civil war (JVP-Sinhalese extremists)
+1988,1988,MYA,Myanmar,Civil violence (student protests)
+1988,1988,BUI,Burundi,Ethnic violence (Tutsis against Hutus)
+1988,1997,AZE,Azerbaijan,Ethnic War (Nagorno-Karabakh)
+1988,1997,PNG,Papua New Guinea,Ethnic warfare (Bougainville)
+1988,2014,SOM,Somalia,Civil war
+1989,1989,CHN,China,Civil violence (Tiananman protests)
+1989,1989,PAN,Panama,International violence
+1989,1989,USA,USA,International violence
+1989,1989,RUM,Romania,Civil violence
+1989,1989,MAA,Mauritania,Reciprocal violence against foreign nationals; forced repatriation
+1989,1989,SEN,Senegal,Reciprocal violence against foreign nationals; forced repatriation
+1990,1990,CHN,China,Repression of dissidents
+1990,1991,USR,USSR,Sporadic ethnic/communal violence
+1990,1991,IRQ,Iraq,Gulf War
+1990,1991,KUW,Kuwait,Gulf War
+1990,1994,RWA,Rwanda,Ethnic warfare (Tutsis v Hutu regime)
+1990,1994,ARM,Armenia,International war (Nagorno-Karabakh)
+1990,1994,AZE,Azerbaijan,International war (Nagorno-Karabakh)
+1990,1995,MLI,Mali,Ethnic violence (Tuareg)
+1990,1997,LBR,Liberia,Civil war
+1990,1997,NIR,Niger,Ethnic violence (Azawad and Toubou)
+1990,1997,CAM,Cambodia,Civil warfare (Khmer Rouge)
+1990,2014,IND,India,Ethnic war (Kashmiris)
+1991,1991,CRO,Croatia,Civil war (Croatian independence)
+1991,1991,BUI,Burundi,Civil violence
+1991,1991,HAI,Haiti,Military coup ousts Aristide
+1991,1993,BHU,Bhutan,Rebellion and forced repatriation of Lhotshampas (ethnic-Nepalese)
+1991,1993,GRG,Georgia,Civil war
+1991,1993,GRG,Georgia,Ethnic war (Abkhazians-Ossetians)
+1991,1993,KEN,Kenya,"Ethnic violence (Kalenjin, Masai, Kikuyu, Luo)"
+1991,1994,DJI,Djibouti,FRUD rebellion
+1991,1995,CRO,Croatia,Ethnic war (Serbs)
+1991,1997,MLD,Moldova,Ethnic violence (Trans-Dniester Russians)
+1991,2001,SIE,Sierra Leone,Civil/Ethnic warfare (RUF/Mende)
+1991,2004,ALG,Algeria,Civil warfare (Islamic militants)
+1991,2002,IND,India,Ethnic violence (Ayodhya Movement; Hindu vs Muslim)
+1992,1995,BOS,Bosnia,"Ethnic war (Serbs, Croats, Muslims)"
+1992,1996,ZAI,Zaire,Ethnic violence
+1992,1998,TAJ,Tajikistan,Civil warfare
+1992,1999,EGY,Egypt,Civil violence (Islamic militants)
+1992,1999,SEN,Senegal,Ethnic violence (Casamance)
+1993,1993,CON,Congo-Brazzaville,Ethnic violence
+1993,2005,BUI,Burundi,Ethnic warfare (Tutsis against Hutus)
+1994,1994,RWA,Rwanda,Ethnic violence (Hutus target Tutsis)5
+1994,1994,GHA,Ghana,Ethnic violence
+1994,1994,YEM,Yemen,Ethnic warfare (south Yemenis)
+1994,1996,RUS,Russia,Ethnic war (Chechnya secession I)
+1994,1997,MEX,Mexico,Ethnic violence (Chiapas)
+1994,1998,RWA,Rwanda,Ethnic warfare (Hutus vs Tutsi regime)5
+1995,1995,ECU,Ecuador,International violence (border dispute)
+1995,1995,PER,Peru,International violence (border dispute)
+1996,1998,IRQ,Iraq,Ethnic warfare (Kurds)
+1996,2006,NEP,Nepal,"Civil war (UPF ""People's War"")"
+1996,2014,ZAI,Dem. Rep. of Congo (Zaire),Civil War (ouster of Mobutu & aftermath; Interhamwe in NE)
+1996,2002,RWA,Rwanda,Direct Intervention in DRCongo civil war
+1996,2002,UGA,Uganda,Direct Intervention in DRCongo civil war
+1997,1999,CON,Congo-Brazzaville,Civil warfare
+1997,1997,ALB,Albania,Civil violence (Pyramid Schemes)
+1997,2005,INS,Indonesia,Ethnic violence (Aceh; GAM militants)
+1997,2010,NIG,Nigeria,"Communal violence (Delta province; Ijaw, Itsekeri, and others)"
+1997,2014,PAK,Pakistan,"Sectarian violence: Sunnis, Shi'ites, and Ahmadis"
+1998,1999,BOS,Yugoslavia,Ethnic war (Kosovar Albanians)
+1998,1998,INS,Indonesia,Civil violence (ouster of Suharto)
+1998,1998,GRG,Georgia,Ethnic warfare (Abkhazia)
+1998,1999,GNB,Guinea-Bissau,Civil war (coup attempt)
+1998,2000,,Eritrea,Interstate war
+1998,2000,ETH,Ethiopia,Interstate war
+1998,2003,IRQ,Iraq,International violence (US/UK airstrikes)
+1998,2003,SOL,Solomon Islands,Communal violence (Malaita/Isatabu islanders)
+1999,1999,IND,India,International violence (Kargil clashes)
+1999,1999,PAK,Pakistan,International violence (Kargil clashes)
+1999,1999,INS,Indonesia,Ethnic violence (East Timor independence)
+1999,2002,INS,Indonesia,Ethnic violence (Moluccas; Muslim/Christian)
+1999,1999,BOS,Yugoslavia,International violence (NATO airstrikes)
+1999,2000,ETH,Ethiopia,Ethnic war (Oromo separatists)
+1999,2006,RUS,Russia,Ethnic war (Chechnya secession II)
+2000,2001,GUI,Guinea,Parrot's Beak clashes
+2000,2003,LBR,Liberia,Civil violence (attacks by LURD guerillas)
+2000,2005,IVO,Ivory Coast,"Civil war (north, south, and west divisions)"
+2001,2001,INS,Indonesia,Communal (Dayaks vs Madurese immigrants)
+2001,2001,RWA,Rwanda,Ethnic war (attacks by Hutu guerillas)
+2001,2001,USA,United States,Al Qaeda attacks on New York/Washington
+2001,2003,CEN,Central African Rep.,Civil violence (attacks by Bozize loyalists; coup)
+2001,2004,NIG,Nigeria,"Ethnic violence (Christian-Muslim; Plateau, Kano regions)"
+2001,2014,AFG,Afghanistan,Ouster of Taliban and continuing civil war
+2001,2014,IND,India,Maoist insurgency (People's War Group; Maoist Communist Centre; People's Liberation Guerrilla Army)
+2002,2003,CON,Congo-Brazzaville,Civil violence (Ninja militants in Pool region)
+2003,2003,THI,Thailand,Anti-Drug Traffiking Campaign
+2003,2010,IRQ,Iraq,"US-led Ouster of Hussein-Ba'athist regime and consequent sectarian strife: Sunnis, Shias, Kurds, and foreign al Qaeda"
+2003,2010,USA,United States,Invasion of Iraq and military occupation
+2003,2007,SAU,Saudi Arabia,Islamic Militants
+2003,2014,SUD,Sudan,Communal-separatist violence in Darfur
+2004,2014,YEM,Yemen,Followers of al-Huthi in Sadaa
+2004,2007,HAI,Haiti,General unrest surrounding ouster of President Aristide and his Lavalas Family ruling party
+2004,2014,PAK,Pakistan,Pashtuns in Federally Administered Tribal Areas
+2004,2014,THAI,Thailand,"Malay-Muslims in southern border region (Narathiwat, Pattani, Songkhla, and Yala provinces)"
+2004,2014,TUR,Turkey,Kurds in the southeast
+2005,2014,PAK,Pakistan,Rebellion in Baluchistan
+2005,2010,CHA,Chad,"Anti-Deby regime: United Front for Democratic Change (FUC), Union of Forces for Democracy and Development (UFDD), and others"
+2005,2014,CEN,Central African Republic,"APRD, UFDR, and Seleka rebels and ""anti-balaka"" (Christian) militias"
+2005,2014,USA,United States,Stabilization operation in Afghanistan
+2006,2006,ISR,Israel,Israel vs Hezbollah
+2006,2006,LEB,Lebanon,Israel vs Hezbollah
+2006,2008,KEN,Kenya,Sabaot Land Defense Forces (SLDF) rebellion in Mt. Elgon
+2006,2014,MEX,Mexico,"Federal Army and police offensive against entrenched drug cartels and corrupt police and officials, mainly in the northern region bordering the USA"
+2006,2010,CHA,Chad,"Communal fighting between Toroboro (""black"" sedentary farmer) and Janjawid (""arab"" pastoralist) militias"
+2007,2008,LEB,Lebanon,Palestinian/Islamist militants
+2007,2014,ETH,Ethiopia,Somalis (ONLF) and Oromo (OLF) militants in Ogaden region
+2008,2008,GRG,Georgia,South Ossetia War
+2008,2008,RUS,Russia,South Ossetia War
+2008,2008,KEN,Kenya,Communal violence following disputed presidential election
+2008,2008,NIG,Nigeria,Communal violence in Jos: Christian and Muslim
+2008,2014,RUS,Russia,"Ethnic violence (Islamist militants in eastern Transcaucasus region: Chechnya, Dagestan, and Ingushetia)"
+2009,2014,CHN,China,Ethnic violence (Uighers in Xinjiang province)
+2009,2014,NIG,Nigeria,Rebellion by radical-Muslim Boko Haram in north border region
+2009,2014,SSU,South Sudan,Communal violence in south: Lou Nuer and Murle; rebel militias
+2010,2014,NIG,Nigeria,Communal violence in Jos/Plateau state: Christian and Muslim
+2010,2010,KYR,Kyrgyzstan,"Ethnic violence (Kyrgyz; Uzbeks, following ouster of Bakiyev)"
+2011,2011,EGY,Egypt,Popular protests against Mubarak regime
+2011,2011,IVO,Ivory Coast,Rejection of December 2010 presidential election results by regime leads to resumption of civil war and ends with arrest of President Gbagbo
+2011,2014,IRQ,Iraq,Continuing Sunni-Shia sectrian strife; Islamic State insurgency
+2011,2014,SYR,Syria,Popular protests and regime crackdown trigger warfare with ethnic-Sunni miltants and Islamist-extremists against Assad's ethnic-Alawite regime
+2011,2011,LIB,Libya,Anti-Gaddhafi elements centered in the eastern coastal region; NATO intervention
+2011,2014,YEM,Yemen,"Anti-Saleh demonstrations, southern separatists, army mutiny, clan rivalry, and al Qaeda militants"
+2011,2014,SUD,Sudan,Armed supporters of the Sudanese People's Liberation Movement (SPLM-North) in South Kordofan and Blue Nile states
+2012,2014,MLI,Mali,"Islamist Ansar Dine and ethnic-Tuareg ""Azawad"" separatists"
+2013,2014,EGY,Egypt,Military ouster of President Morsi and crackdown on Muslim Brotherhood; Islamist rebellion in Sinai and south
+2013,2014,SSU,South Sudan,Rebellion by ethnic Nuer supporters of Reik Machar leads to war with ethnic Dinka supporters of President Salva Kiir
+2013,2014,ZAI,Dem. Rep. of Congo,Ethnic Mai Mai separatist rebellion in Katanga Province
+2014,2014,LIB,Libya,Fighting among several militias over control of oil revenues and central authority (mainly east/west/south and secular/Islamist splits)
+2014,2014,UKR,Ukraine,Pro-Russian separatists in eastern Ukraine

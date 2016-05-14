@@ -37,15 +37,20 @@ def _fetch_all_rows_for_query(query):
 
 @app.route('/') 
 def get_main_page():
-    ''' This is the only route intended for human users '''
+    ''' This is the only route intended for human users
+    It features an interactive world map that displays political conflicts
+    worldwide that occurred between 1946 and 2012'''
     return flask.render_template('maps.html')
 
-@app.route('/politicalconflicts/<year>')
-def get_all_countries(year):
-    ''' Returns a list of all the countries and relevant severity
-    information for the year indicated. Countries are output in
-    alphabetical order'''
-    query = '''SELECT country, three_letter, year, intind, intviol, intwar, civviol, civwar, ethviol, ethwar FROM severity WHERE year={0} ORDER by country'''.format(year)
+@app.route('/politicalconflicts/<year>/<two_letter_code>')
+def get_all_countries(year, two_letter_code):
+    ''' Returns the severity information (severity sum and description of the conflict)
+    for the specified country in the specified year. Countries are identified using the two letter country code.
+    This is being used by the webpage to get the information that display below the map.'''
+    query_two_letter = '''SELECT three_letter FROM idtranslate WHERE UPPER(two_letter) LIKE UPPER('%{0}%')'''.format(two_letter_code)
+    for item in _fetch_all_rows_for_query(query_two_letter):
+        three_letter_code = item[0]
+    query = '''SELECT country, three_letter, year, intind, intviol, intwar, civviol, civwar, ethviol, ethwar FROM severity WHERE year={0} AND UPPER(three_letter) LIKE UPPER('%{1}%')'''.format(year, three_letter_code)
     country_list = []
     for row in _fetch_all_rows_for_query(query):
         severity_sum = row[3] + row[4] + row[5] + row[6] + row[7] + row[8] + row[9]  
@@ -74,11 +79,13 @@ def get_all_countries(year):
 
     return json.dumps(country_list)
 
-@app.route('/politicalconflicts/detail/<country>')
-def get_most_severe(country):
-    ''' Returns a list of dictionaries, 
-    each of which describes the total severity of conflict
-     in a specific country with keys ‘country’, ’three_letter’, ‘year’, ‘sum’ '''
+@app.route('/politicalconflicts/highestYear/<country>')
+def get_most_severe_year(country):
+    '''Finds the year that had the highest severity for the specified country,
+    then uses that year to get list of dictionaries that contain 
+    each country in the map and the severity level for that country in the year found 
+    (using the get_all_countries_two_letter api call)
+    This is used by the webpage to update the map when a country is entered'''
     query = '''SELECT year, intind, intviol, intwar, civviol, civwar, ethviol, ethwar
                FROM severity
                WHERE UPPER(country) LIKE UPPER('%{0}%')
@@ -90,15 +97,21 @@ def get_most_severe(country):
         severity_sum = row[1] + row[2] + row[3] + row[4] + row[5] + row[6] + row[7]  
         if (severity_sum >= highest_severity):
             highest_year = row[0]
-            highest_severity = severity_sum
-    print(--------------------------------------------highest_year)   
-    return get_all_countries(highest_year)
+            highest_severity = severity_sum   
+    return json.dumps(highest_year)
+
+@app.route('/politicalconflicts/detail/<country>') 
+def get_most_severe(country):
+    '''Finds the year that had the highest severity for the specified country and returns that year'''   
+    highest_year = get_most_severe_year(country)
+    return get_all_countries_two_letter(highest_year)
 
     
 @app.route('/politicalconflicts/<country>/<year>')
 def get_country_details(country, year):
     ''' a list of dictionaries, each of which describes the total severity of 
     conflict in a specific country with keys ’three_letter’, ‘country’, ‘year’, ‘sum’
+    This is not currently being used by the website.
     '''
     query_severity = '''SELECT three_letter, country, year, intind, intviol, intwar, civviol, civwar, ethviol, ethwar
                FROM severity
@@ -129,7 +142,10 @@ def get_country_details(country, year):
 
 @app.route('/politicalconflicts/twoletter/<year>')
 def get_all_countries_two_letter(year):
-    '''returns severity sum and two letter code'''
+    '''Returns a list of  dictionaries containing a key which is the two letter code
+    for the country and the value which is the total severity sum for that country. This
+    information is gathered for every country in the year specified.
+    This api call is used by the main year search feature of the map'''
     query = '''SELECT country, three_letter, year, intind, intviol, intwar,  civviol, civwar, ethviol, ethwar FROM severity WHERE year={0} ORDER by country'''.format(year)
     country_list={}
     for row in _fetch_all_rows_for_query(query):
